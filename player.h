@@ -15,7 +15,13 @@ class Player {
     int GetTurn() { return numberOfTurns_; }
 
     void Move(int distanceMoved);
+
+    void TakeTurn();
+
+    bool HasWon();
  private:
     int spaceOnBoard_;
     int numberOfTurns_;
 };
+
+int Roll();
